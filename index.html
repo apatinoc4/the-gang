@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>The Gang</title>
+	<title>Cool Fellas</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -10,11 +10,11 @@
 			<h4> Andrew from <a href="https://www.skillshare.com/profile/Andr%C3%A9s-Pati%C3%B1o/9282525">SkillShare </a> presents</h4>
 
 			<h1> The Silliest &amp;<br/> 
-				Most Awesome Gang<br/> 
+				Coolest Pals<br/> 
 			In The World </h1>
-			<h3>It´s Circle Guy, Hat Guy &amp; Red Guy,<br/>
+			<h3>It´s Darby, Sher &amp; Fish,<br/>
 			They´re the best of friends </h3>
-			<button class="cta alt">Read More</button>
+			<button class="cta alt" href="#more-info">Read More</button>
 			<div class="character1"></div>
 			<div class="character2"></div>
 			<div class="character3"></div>
@@ -25,7 +25,8 @@
 		<a href="#" class="logo"> The Gang </a>
 		<ul>
 
-			<li><a href="#"> Sign Up</a></li>
+			<li><a href="javascript:()" onclick="showPopup();">Sign Up</a>
+</li>
 			<li><a href="#story"> The Story</a></li>
 			<li><a href="#more-info">More Info</a></li>
 
@@ -33,69 +34,76 @@
 	</nav>
 	<div class="more-info">
 		<div class="wrapper">
-		<h2>Join Our Fan Club</h2>
+		<h2>Join Our Crew</h2>
 		<p>Every week we have a <highlight class="highlight">party</highlight>. If you want to join us then join our fan club. Members will also recieve pictures of us in all kinds of shapes and sizes. Cool huh?</p>
-		<button class="cta">Sign Me Up!</button>
+		<button class="cta" onclick="showPopup();">Sign Me Up!</button>
 	</div>
 	</div>
 	<div class="sep"> </div>
 	<div class="story" id="story">
 		<div class="wrapper">
 		<ul class="nb-list">
-			<li class="blue">Rock 'n Roll</li>
+			<li class="blue">Kindness</li>
 			<li class="gray">&nbsp;</li>
 			<li class=" yellow dragging">Laughter</li>
-			<li class="red">Square Offs</li>
-			<li class="pink">Circuitous Routes</li>
-			<li class="salmon">Trigonometry</li>
-			<li class="blue">Rad Hats</li>
+			<li class="red">Loving Pizza</li>
+			<li class="pink">Playing Fair</li>
+			<li class="salmon">Reading</li>
+			<li class="blue">Cool Hats</li>
 			<li class="yellow">Being Silly</li>
 		</ul>
-		<h3>Things We Find Important<br>
+		<h3>Things That Make You Cool<br>
 		Bellow: Our Story</h3>
-		<p>Once upon a time there was a group of shapes. They were mostly black and rectangular. They were mean and very serious.</p>
+		<p>Once upon a time there was a group of animals. They were mostly big and scary. They were mean and very serious.</p>
 
-		<p>And so they kicked the 3 shapes that didn’t conform out of their gang, which was called the Right Angled Gang.</p>
+		<p>And so they kicked the 3 animals that didn’t conform out of their group, which was called the Scary Face Gang.</p>
 
-		<p>And so these 3 shapes were very sad, but found great joy and comfort being around each other. They soon started having a lot of fun, started rocking and rolling, started being silly, and became the most well-known shape gang in the universe.</p>
+		<p>And so these 3 animals were very sad, but found great joy and comfort being around each other. They soon started having a lot of fun, started eating pizza, started being silly, and became the most well-known pals in around the block.</p>
 
-		<p>They even started making fun of squares and rectangles in what they like to call ‘Square Offs’!</p>
+		<p>They even started making  new friends with other animals in what they like to call ‘Cool Meetings’!</p>
 	</div>
 	</div>
 	<div class="sep">
 
 	</div>
-	<img class="gang-img" src="gang.png" width="735" height="399" alt="The Gang">
+	<img class="gang-img" src="Group.png" width="735" height="399" alt="The Gang">
 	<footer>
 		<div class="wrapper">
 		Made by Andrew from <a href="https://www.skillshare.com/profile/Andr%C3%A9s-Pati%C3%B1o/9282525">SkillShare </a>
 	</div>
 	</footer>
-</body>
-<div class="popup">
+
+<div class="popup" id="popup">
 	<div class="blanket"></div>
 	<div class="content">
 		<h2>Fill In Your Details</h2>
 		<form action="">
+			<div class="row">
 			<div class="item">
 				<label for="">Your First Name</label>
-				<input type="" placeholder="AwesomeFace" value="Shirley">
+				<input type="text" placeholder="AwesomeFace" value="Shirley">
 			</div>
 			<div class="item">
 				<label>Your Last Name</label>
-				<input type="" placeholder="CircleFace">
+				<input type="text" placeholder="CircleFace">
 			</div>
+			</div>
+			<div class="row">
 			<div class="item">
 				<label>Your Favorite Color</label>
-				<input type="" placeholder="Pink">
+				<input type="text" placeholder="Pink">
 			</div>
 			<div class="item">
 				<label>Your Favorite Food</label>
-				<input type="" placeholder="Pizza">
+				<input type="text" placeholder="Pizza">
+			</div>
 			</div>
 			<button class="cta">I want In!</button>
 		</form>
-		<button class="close">Close</button>
+		<button class="close" onclick="hidePopup();">Close</button>
 	</div>
 </div>
+
+<script src="script.js" type="text/javascript"></script>
+</body>
 </html>
